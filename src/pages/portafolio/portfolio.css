@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  background-color: #3d3d3d;
+}
+.title-3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 80px 0 20px 0;
+}
+.subTitle-2 {
+  font-family: "Courier New", Courier, monospace;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  padding: 0 80px;
+  width: 100%;
+  padding: 0;
+}
+.option {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  margin: 40px 0 0 0;
+}
+.option > button {
+  margin: 0 10px;
+  width: auto;
+  padding: 0 10px;
+  background-color: #3d3d3d;
+  color: #ffffff;
+  border: none;
+}
+.container_projects {
+  width: 90%;
+  height: auto;
+  margin: 50px 30px;
+  /* border: 1px solid #fff; */
+
+  background-color: #3d3d3d;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  width: 400px;
+  height: 400px;
+
+  background-color: #cecece;
+
+  margin: 10px 10px;
+}
+
+/* responsive */
+
+/* PC - Laptop */
+@media screen and (min-width: 2560px) {
+  .title-3 {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 1920px) and (max-width: 2359) {
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) {
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1359px) {
+  .container_projects {
+    justify-content: center;
+  }
+  .subTitle-2 {
+    font-size: 21px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 767px) {
+  .title-3{
+      font-size: 45px;
+  }
+      .subTitle-2 {
+    font-size: 18px;
+  }
+}

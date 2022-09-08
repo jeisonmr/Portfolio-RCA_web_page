@@ -1,0 +1,19 @@
+:root{
+      /* Fonts */
+      --title_1:  'Julius Sans One', sans-serif;
+      --title_2: 'Inter', sans-serif;
+
+      /* Color Fonts */
+      --primary:#FFFFFF;
+      --secundary:#0d1117;
+      --tertiary: ##EEEEEE;
+
+      /* Color Backgrounds */
+      --bg1:#000000;
+      --bg2:#161618;
+      --bg3:#121214;
+      --bg4:#FFFFFF;
+      --bg5:#E4E4E4;
+}
+
+

@@ -1,0 +1,80 @@
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+.empresas{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      height: auto;
+
+      background-color: #FFFFFF;
+}
+.title-4{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #0d1117;
+      font-size: 50px;
+      text-align: center;
+      margin:120px 0 20px 0;
+}
+.subTitle-3{
+      font-family: 'Courier New', Courier, monospace;
+      color: #0d1117;
+      font-size: 25px;
+      text-align: center;
+      padding: 0 80px;
+}
+.empLogo{
+      width: 90%;
+      height: 60%;
+      margin: 50px 30px;
+
+      background-color: #FFF;
+      position: relative;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content:center;
+
+}
+.logo{
+      width: 400px;
+      height: 200px;
+
+      background-color: #cecece;
+
+      margin: 30px 10px 0 10px;
+      display:inline-block;
+}
+
+
+/* responsive */
+
+/* PC - Laptop */
+@media screen and (min-width: 2560px) {
+}
+@media only screen and (min-width: 1920px) and (max-width: 2359) {}
+
+@media only screen and (min-width: 1360px) and (max-width: 1919px) {
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1359px) {
+}
+
+/* Smartphone */
+@media (max-width: 767px) {
+      .title-4 > p{
+            font-size: 60%;
+            font-weight: 800;
+      }
+      .subTitle-3{
+            font-size: 17px
+      }
+}
