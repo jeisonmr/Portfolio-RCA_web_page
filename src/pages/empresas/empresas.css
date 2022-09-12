@@ -12,18 +12,18 @@
       width: 100%;
       height: auto;
 
-      background-color: #FFFFFF;
+      background-color: var(--bg2);
 }
 .title-4{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: #0d1117;
+      color: var(--primary);
       font-size: 50px;
       text-align: center;
       margin:120px 0 20px 0;
 }
 .subTitle-3{
       font-family: 'Courier New', Courier, monospace;
-      color: #0d1117;
+      color: var(--primary);
       font-size: 25px;
       text-align: center;
       padding: 0 80px;
@@ -33,7 +33,7 @@
       height: 60%;
       margin: 50px 30px;
 
-      background-color: #FFF;
+      background-color: var(--bg3);
       position: relative;
 
       display: flex;
@@ -46,7 +46,7 @@
       width: 400px;
       height: 200px;
 
-      background-color: #cecece;
+      background-color: var(--bg2);
 
       margin: 30px 10px 0 10px;
       display:inline-block;

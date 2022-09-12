@@ -1,33 +1,25 @@
 import React, { useState } from "react";
-
+import { dataSkill } from "../../components/data/skill.data";
 import "./skills.css";
 
 export const Skills = () => {
-
-
   return (
     <>
-      <section className="my">
+      <section className="mySkills">
         <div className="title-2">
-          <p className="name">MI NOMBRE ES JEISON MUÑOZ RADA</p>
-          <p>DESARROLLADOR DE APLICACIONES FRONT END</p>
+          <p className="name">{dataSkill.title}</p>
+          <p>{dataSkill.title2}</p>
         </div>
         <div className="subTitle">
-          <p>
-            Disfruto traducir las necesidades comerciales en soluciones
-            tecnológicas sólidas e integradas. Me encanta trabajar en entornos
-            de ritmo rápido resolviendo problemas tecnológicos únicos,
-            desafiantes y desarrollando soluciones innovadoras, uno de mis
-            hobbies es aprender constantemente actualizando mi conocimineto con
-            educación online.
-          </p>
+          <p>{dataSkill.parraf}</p>
         </div>
-      <div className="skills">
-        <div className="skill"></div>
-        <div className="skill"></div>
-        <div className="skill"></div>
-        <div className="skill"></div>
-      </div>
+        <div className="skills">
+          {dataSkill.skills.map((sol) => (
+            <div key={sol.id} className="skill">
+              {sol.name}
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );

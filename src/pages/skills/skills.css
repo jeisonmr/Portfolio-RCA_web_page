@@ -2,9 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px #0d1117; */
 }
-.my {
+.mySkills {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -13,11 +12,11 @@
   width: 100%;
   height: auto;
 
-  background-color: #e7e7e7;
+  background-color: var(--bg1);
 }
 .title-2 {
   font-family: var(--title);
-  color: var(--secondary);
+  color: var(--primary);
   font-size: 60px;
   font-weight: 500;
   text-align: center;
@@ -28,7 +27,7 @@
 }
 .subTitle {
   font-family: "Courier New", Courier, monospace;
-  color: #0d1117;
+  color: var(--primary);
   font-size: 25px;
   text-align: center;
   padding: 0 80px;
@@ -38,13 +37,8 @@
   height: 600px;
   margin: 50px 30px;
 
-  background-color: #e7e7e7;
   position: relative;
-
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  background-color: var(--bg2);
 }
 .skill {
   width: 100px;
@@ -58,25 +52,26 @@
 
 /* responsive */
 
-/* PC - Laptop */
+/* Desktop X - XL */
 @media screen and (min-width: 2560px) {
 }
-@media only screen and (min-width: 1920px) and (max-width: 2359) {
+@media only screen and (min-width: 1920px) and (max-width:2559px){
 }
 
-@media only screen and (min-width: 1360px) and (max-width: 1919px) {
+/* Laptop M - L */
+@media only screen and (min-width: 1024px) and (max-width: 1919px){
   .title-2{
-    font-size: 55px;
+    font-size: 40px;
   }
   .subTitle {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 0 80px;
   }
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1359px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .title-2 {
     font-size: 30px;
     margin-bottom: 5px;
@@ -92,19 +87,28 @@
   .skills {
     margin: 0 0 30px 0;
   }
+  .skill{
+    width: 80px;
+    height: 80px;
+  }
 }
 
 /* Smartphone */
 @media (max-width: 767px) {
   .title-2 {
     font-size: 20px;
+    padding: 0 20px;
   }
   .name {
     margin-bottom: -7px;
   }
   .subTitle {
-    font-size: 20px;
-    text-align: justify;
-    padding: 0 15px;
+    font-size: 12px;
+    text-align: left;
+    padding: 0 40px;
+  }
+  .skill{
+    width: 60px;
+    height: 60px;
   }
 }

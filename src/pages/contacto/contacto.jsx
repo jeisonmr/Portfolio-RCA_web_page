@@ -13,7 +13,7 @@ export const Contacto = () => {
   return (
     <>
       <section className="contacto">
-        <div className="info">
+        {/* <div className="info">
           <div className="img-contact">
             <img src={correo} alt="correo" />
             <span>JEISONMZR@GMAIL.COM</span>
@@ -30,7 +30,7 @@ export const Contacto = () => {
             <img src={git} alt="GitHub" />
             <span>JEISONMR</span>
           </div>
-        </div>
+        </div> */}
 
         {/* -------------------------------------------------------------- */}
 

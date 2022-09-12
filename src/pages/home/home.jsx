@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import PhotoPerfil from "../../images/perfil.jpeg";
-// import Particles from 'react-particles-js';
 import correo from "../../images/correo.png";
 import lkdn from "../../images/lkdn.png";
 import cv from "../../images/cv.png";
@@ -11,7 +10,6 @@ import git from "../../images/github.png";
 import "./home.css";
 
 export const Home = () => {
-
 
   const [img, setImg] = useState(0);
 
@@ -34,8 +32,8 @@ export const Home = () => {
 
   return (
     <>
-      <section className="home">
-        {/* <Particles/> */}
+   
+    <section className="home">
         <div className="container">
           <img src={PhotoPerfil} className="img-profile" />
           <div className="container-tl">

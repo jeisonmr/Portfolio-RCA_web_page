@@ -1,4 +1,5 @@
 import React from 'react';
+import {dataCompany} from '../../components/data/empresas.data';
 import './empresas.css';
 
 export const Empresas = () =>{
@@ -6,16 +7,15 @@ export const Empresas = () =>{
             <>
                   <section className="empresas">
                         <div className="title-4">
-                              <p>HAN CONFIADO EN MÍ</p>
+                              <p>{dataCompany.title}</p>
                         </div>
                         <div className="subTitle-3">
-                             <p> Estas son las empresas con las que he tenido el privilegio de trabajar</p>
+                             <p>{dataCompany.subTitle}</p>
                         </div>
                         <div className="empLogo">
-                        <div className="logo"></div>
-                        <div className="logo"></div>
-                        <div className="logo"></div>
-                        <div className="logo"></div>
+                        {dataCompany.companies.map((sol)=>(
+                              <div className="logo">{sol.name}</div>
+                        ))}
                         </div>
                   </section>
             </>

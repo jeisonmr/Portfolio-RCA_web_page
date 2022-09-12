@@ -11,7 +11,7 @@
   width: 100%;
   height: auto;
 
-  background-color: #3d3d3d;
+  background-color: var(--bg1);
 }
 .title-3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -55,7 +55,7 @@
   margin: 50px 30px;
   /* border: 1px solid #fff; */
 
-  background-color: #3d3d3d;
+  background-color: var(--bg3);
   position: relative;
 
   display: flex;
@@ -67,23 +67,24 @@
   width: 400px;
   height: 400px;
 
-  background-color: #cecece;
+  background-color: var(--bg2);
 
   margin: 10px 10px;
 }
 
 /* responsive */
 
-/* PC - Laptop */
+/* Desktop X - XL */
 @media screen and (min-width: 2560px) {
   .title-3 {
     font-size: 60px;
   }
 }
-@media only screen and (min-width: 1920px) and (max-width: 2359) {
+@media only screen and (min-width: 1920px) and (max-width: 2359px) {
 }
 
-@media only screen and (min-width: 1360px) and (max-width: 1919px) {
+/* Laptop M - L */
+@media only screen and (min-width: 1024px) and (max-width: 1919px){
 }
 
 /* Tablet */
@@ -93,6 +94,7 @@
   }
   .subTitle-2 {
     font-size: 21px;
+    padding: 0 20px;
   }
 }
 
@@ -103,5 +105,6 @@
   }
       .subTitle-2 {
     font-size: 18px;
+    padding: 0 27px;
   }
 }
