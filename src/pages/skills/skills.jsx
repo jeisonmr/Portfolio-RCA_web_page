@@ -14,11 +14,73 @@ export const Skills = () => {
           <p>{dataSkill.parraf}</p>
         </div>
         <div className="skills">
-          {dataSkill.skills.map((sol) => (
-            <div key={sol.id} className="skill">
-              {sol.name}
+          <div className="category">
+            <label>{dataSkill.category[0]}</label>
+            <div>
+            {dataSkill.lenguejes.map((sol) => (
+              <div key={sol.id} className="skill">
+                {<img src={sol.img} atl={sol.name} className="imgSkill" />}
+              </div>
+            ))}
             </div>
-          ))}
+    
+          </div>
+
+          <div className="category">
+            <label>{dataSkill.category[1]}</label>
+            <div>
+            {dataSkill.frameworks.map((sol) => (
+              <div key={sol.id} className="skill">
+                {<img src={sol.img} atl={sol.name} className="imgSkill" />}
+              </div>
+            ))}
+            </div>
+          </div>
+
+          <div className="category">
+            <label>{dataSkill.category[2]}</label>
+            <div>
+            {dataSkill.devops.map((sol) => (
+              <div key={sol.id} className="skill">
+                {<img src={sol.img} atl={sol.name} className="imgSkill" />}
+              </div>
+            ))}
+            </div>
+          </div>
+
+          <div className="category">
+            <label>{dataSkill.category[3]}</label>
+            <div>
+            {dataSkill.cms.map((sol) => (
+              <div key={sol.id} className="skill">
+                {<img src={sol.img} atl={sol.name} className="imgSkill" />}
+              </div>
+            ))}
+            </div>
+          </div>
+
+          <div className="category">
+            <label>{dataSkill.category[4]}</label>
+            <div>
+            {dataSkill.management.map((sol) => (
+              <div key={sol.id} className="skill">
+                {<img src={sol.img} atl={sol.name} className="imgSkill" />}
+              </div>
+            ))}
+            </div>
+          </div>
+
+          <div className="category">
+            <label>{dataSkill.category[5]}</label>
+            <div>
+            {dataSkill.desing.map((sol) => (
+              <div key={sol.id} className="skill">
+                {<img src={sol.img} atl={sol.name} className="imgSkill" />}
+              </div>
+            ))}
+            </div>
+          </div>
+
         </div>
       </section>
     </>

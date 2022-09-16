@@ -1,48 +1,34 @@
 import React, { useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import PhotoPerfil from "../../images/perfil.jpeg";
-import correo from "../../images/correo.png";
-import lkdn from "../../images/lkdn.png";
-import cv from "../../images/cv.png";
-import git from "../../images/github.png";
-
-
+import { dataHome } from "../../components/data/home.data";
 import "./home.css";
 
 export const Home = () => {
-
-  const [img, setImg] = useState(0);
-
-  const images = () =>{
-    setImg ( "src={git2}" )
-  }
   const title = "HOLA";
 
   const { text } = useTypewriter({
     words: [
-      "MI NOMBRE ES JEISON MUÑOZ",
-      "SOY DESARROLLADOR DE SOFTWARE FRONT END",
-      "CREO APLICACIONES Y PAGINAS WEB",
-      "BIENVENIDO A MI PORTAFOLIO",
+      dataHome.subTitle[0],
+      dataHome.subTitle[1],
+      dataHome.subTitle[2],
+      dataHome.subTitle[3],
     ],
     loop: {},
     typeSpeed: 120,
   });
 
-
   return (
     <>
-   
-    <section className="home">
+      <section className="home">
         <div className="container">
           <img src={PhotoPerfil} className="img-profile" />
           <div className="container-tl">
             <p className=" title">{title}</p>
             <div className="container-logos">
-              <img src={git} onMouseOver={images} className="logos" atl="Github"/>
-              <img src={lkdn} className="logos" atl="LinkedIn"/>
-              <img src={correo} className="logos" atl="Correo"/>
-              <img src={cv} className="logos" atl="CV"/>
+              {dataHome.social.map((i) => (
+                <a href={i.url} target="_blank"><img src={i.img} atl={i.name} className="logos" /></a>
+              ))}
             </div>
           </div>
           {/* -------------------- */}

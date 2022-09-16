@@ -2,6 +2,12 @@ import React from "react";
 import { dataPortfolio } from "../../components/data/portfolio.data";
 import "./portfolio.css";
 export const Portfolio = () => {
+
+  const all = () =>{}
+  const app = () =>{}
+  const pages = () =>{}
+  const desktop = () =>{}
+
   return (
     <>
       <section className="portfolio">
@@ -12,10 +18,10 @@ export const Portfolio = () => {
           <p>{dataPortfolio.subTitle}</p>
         </div>
         <div className="option">
-          <button>ALL</button>
-          <button>APP</button>
-          <button>PAGES</button>
-          <button>DESKTOP</button>
+          <button onClick={all}>ALL</button>
+          <button onClick={app}>APP</button>
+          <button onClick={pages}>PAGES</button>
+          <button onClick={desktop}>DESKTOP</button>
         </div>
         <div className="container_projects">
           {dataPortfolio.projects.map((sol) => (

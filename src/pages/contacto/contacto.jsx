@@ -1,61 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Form } from "react-bootstrap";
-import correo from "../../images/correo.png";
-import local from "../../images/local.png";
-import cv from "../../images/cv.png";
-import git from "../../images/github.png";
 import "./contacto.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Contacto = () => {
-  const [state, setstate] = useState(0);
+
+  const title = 'CONTACTO';
 
   return (
     <>
-      <section className="contacto">
-        {/* <div className="info">
-          <div className="img-contact">
-            <img src={correo} alt="correo" />
-            <span>JEISONMZR@GMAIL.COM</span>
-          </div>
-          <div className="img-contact">
-            <img src={local} alt="Localización" />
-            <span>BARRANQUILLA, COLOMBIA</span>
-          </div>
-          <div className="img-contact">
-            <img src={cv} alt="CV" />
-            <span>DESCARGAR MI CV</span>
-          </div>
-          <div className="img-contact">
-            <img src={git} alt="GitHub" />
-            <span>JEISONMR</span>
-          </div>
-        </div> */}
-
-        {/* -------------------------------------------------------------- */}
-
-        <div className="social-2">
-        <div className="info">
-          <div className="img-contact">
-            <img src={correo} alt="correo" />
-            <span>JEISONMZR@GMAIL.COM</span>
-          </div>
-          <div className="img-contact">
-            <img src={local} alt="Localización" />
-            <span>BARRANQUILLA, COLOMBIA</span>
-          </div>
-          <div className="img-contact">
-            <img src={cv} alt="CV" />
-            <span>DESCARGAR MI CV</span>
-          </div>
-          <div className="img-contact">
-            <img src={git} alt="GitHub" />
-            <span>JEISONMR</span>
-          </div>
-          </div>
-        </div>
+      <section className="contacto" id="contact">
+      <div className="title-5">{title}</div>
         <div className="formulario">
-          <div className="form">
             <Form
               className="formSub"
               ReactRef="formContact"
@@ -106,7 +62,6 @@ export const Contacto = () => {
               </Form.Group>
             </Form>
           </div>
-        </div>
       </section>
     </>
   );
