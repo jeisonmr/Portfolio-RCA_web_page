@@ -64,14 +64,22 @@
   justify-content: center;
 }
 .project {
-  width: 400px;
-  height: 400px;
+  width: 500px;
 
   background-color: var(--bg2);
 
   margin: 10px 10px;
+
+  duration: 300ms;
+}
+.project > img {
+  width: 100%;
 }
 
+/* Efefctos */
+.project:hover{
+  cursor: crosshair;
+}
 /* responsive */
 
 /* Desktop X - XL */

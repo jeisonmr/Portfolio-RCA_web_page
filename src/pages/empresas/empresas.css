@@ -33,7 +33,7 @@
       height: auto;
       margin: 50px 30px;
 
-      background-color: var(--bg3);
+      /* background-color: var(--bg3); */
       position: relative;
 
       display: flex;
@@ -50,6 +50,9 @@
 
       margin: 30px 10px;
       display:inline-block;
+}
+.logo > img{
+      width: 100%;
 }
 
 

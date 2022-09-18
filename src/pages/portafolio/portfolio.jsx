@@ -1,12 +1,36 @@
-import React from "react";
+import { React, useState } from "react";
 import { dataPortfolio } from "../../components/data/portfolio.data";
 import "./portfolio.css";
-export const Portfolio = () => {
 
-  const all = () =>{}
-  const app = () =>{}
-  const pages = () =>{}
-  const desktop = () =>{}
+export const Portfolio = () => {
+  const [stateAll, setAll] = useState(true);
+  const [stateApp, setApp] = useState(false);
+
+  const all = () => {
+    // setApp(true);
+
+  };
+  const app = () => {
+    setAll(false);
+    return (
+    dataPortfolio.app.map((item) => (
+      <div className="project" key={item.id}>
+        <img src={item.img} atl={item.type} />
+      </div>
+    ))
+    )
+  };
+  const pages = () => {
+
+    return(
+      dataPortfolio.sw.map((item) => (
+       <div className="project" key={item.id}>
+         <img src={item.img} atl={item.type} />
+       </div>
+     )) 
+     )
+  };
+  const desktop = () => {};
 
   return (
     <>
@@ -24,11 +48,7 @@ export const Portfolio = () => {
           <button onClick={desktop}>DESKTOP</button>
         </div>
         <div className="container_projects">
-          {dataPortfolio.projects.map((sol) => (
-            <div className="project" key={sol.id}>
-              {sol.name}
-            </div>
-          ))}
+          {stateAll ? all() : ""}
         </div>
       </section>
     </>
