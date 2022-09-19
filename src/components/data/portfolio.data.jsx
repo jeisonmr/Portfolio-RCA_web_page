@@ -2,7 +2,7 @@ import ultColombia from "../../images/portfolio/ultracem-colombia.png";
 import agnPopuli from "../../images/portfolio/agencia-populi.png";
 import altLed from "../../images/portfolio/alutraficled.png";
 import dexIo from "../../images/portfolio/dexio.png";
-import gasCaribe from "../../images/portfolio/Gases-del-Caribe.png";
+import gasCaribe from "../../images/portfolio/gases-del-caribe.png";
 import aLeal from "../../images/portfolio/andreis-leal.png";
 import pass from "../../images/portfolio/password-generator.jpg";
 
